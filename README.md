@@ -4,7 +4,7 @@
 <p align="center">
   <a href="https://github.com/PencilNavigator/Freenom-Workers/blob/main/README_EN.md">English README</a>
   •
-  <a href="https://github.com/Atlas-OS/Atlas/wiki/1.-FAQ#contents">Issues</a>
+  <a href="https://github.com/PencilNavigator/Freenom-Workers-Issues/issues">Issues</a>
   •
   <a href="https://github.com/PencilNavigator/Freenom-Workers/discussions" target="_blank">General Discussions</a>
 </p>
