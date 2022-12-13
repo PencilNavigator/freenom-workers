@@ -6,7 +6,7 @@
   •
   <a href="https://github.com/PencilNavigator/Freenom-Workers-Issues/issues">Issues</a>
   •
-  <a href="https://github.com/PencilNavigator/Freenom-Workers/discussions" target="_blank">General Discussions</a>
+  <a href="https://github.com/PencilNavigator/Freenom-Workers-Issues/discussions" target="_blank">General Discussions</a>
 </p>
 <p align="center">
  喜欢这个项目？给颗Star吧！
