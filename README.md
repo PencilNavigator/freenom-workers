@@ -55,6 +55,10 @@
 
 （触发Cron）进入“快速编辑”，选择“设定时间”，再选择“触发计划的事件”。查看下方Console是否有输出域名剩余日期。
 
+## 效果展示
+![图片](https://user-images.githubusercontent.com/85282140/207813025-f8f5c666-6b5c-430e-a61b-3ee2ca6c89ff.png)
+（2022/12/15测试）
+
 ## 待实现的功能
 执行成功后，通过邮件送信/TelegramBot/DiscordBot发送执行结果。
 
