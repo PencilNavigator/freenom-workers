@@ -4,9 +4,11 @@
 <p align="center">
   <a href="https://github.com/PencilNavigator/Freenom-Workers/blob/main/README.md">简体中文README</a>
   •
-  <a href="https://github.com/Atlas-OS/Atlas/wiki/1.-FAQ#contents">Issues</a>
+  <a href="https://github.com/PencilNavigator/Freenom-Workers/issues">Issues</a>
   •
-  <a href="https://github.com/PencilNavigator/Freenom-Workers/discussions" target="_blank">General Discussions</a>
+  <a href="https://github.com/PencilNavigator/Freenom-Workers/Wiki">Wiki</a>
+  •
+  <a href="https://github.com/PencilNavigator/Freenom-Workers/discussions" target="_blank">Discussions</a>
 </p>
 <p align="center">
  Like this project？ Star it!
@@ -64,11 +66,11 @@ _Please note that access through preview does not trigger renewal. it should onl
 
 ## Known Issues
 
-Please check out this [Wiki](https://github.com/PencilNavigator/freenom-workers-issues/wiki/Known-Issues) page.
+Please check out this [Wiki](https://github.com/PencilNavigator/freenom-workers/wiki/Known-Issues) page.
 
 ## Planned enhancement
 
-After execution, send execution result via Email/TelegramBot/DiscordBot.
+Please check out this [Wiki](https://github.com/PencilNavigator/freenom-workers/wiki/Planned-Enhancement) page.
 
 ## Simliar Projects
 https://github.com/luolongfei/freenom (PHP)

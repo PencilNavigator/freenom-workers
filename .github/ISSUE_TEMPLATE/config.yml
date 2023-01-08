@@ -1,14 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: 故障报告 Bug Report
-    url: https://github.com/PencilNavigator/Freenom-Workers-Issues/issues/new?assignees=&labels=bug+%E6%95%85%E9%9A%9C%2C+unconfirmed+%E6%9C%AA%E7%A1%AE%E8%AE%A4&template=Bug_Report.yml&title=Bug+report
-    about: create a bug report to help us inprove.
   - name: 功能请求 Feature Request
-    url: https://github.com/PencilNavigator/Freenom-Workers-Issues/issues/new?assignees=&labels=enhancement+%E5%8A%9F%E8%83%BD%E8%AF%B7%E6%B1%82&template=Feature_Request.yml&title=Feature+request
-    about: 提问，求助，以及其他类型的帮助支持，请前往Discussions。Answers to questions and other kinds of help support is provided on the discussions page.
-  - name: 问题与帮助 Questions and support
-    url: https://github.com/PencilNavigator/Freenom-Workers-Issues/discussions
-    about: 提问，求助，以及其他类型的帮助支持，请前往Discussions。Answers to questions and other kinds of help support is provided on the discussions page.
-  - name: 交流Discord
-    url: https://discord.gg/e8McQJStgD
-    about: 加入该项目的交流Discord. Join this project's Discord Server.
+    url: https://github.com/PencilNavigator/freenom-workers/discussions/new?category=feature-request
+    about: 请前往Discussions提交Feature Request。 Feature Request is handled on Discussions.
+  - name: 帮助支持 Support
+    url: https://github.com/PencilNavigator/freenom-workers/discussions/new?category=support
+    about: 提问，求助，以及其他类型的帮助支持，请前往Discussions。 Answers to questions and support is provided on the discussions page.
+  - name: 交流 General Discussions
+    url: https://github.com/PencilNavigator/freenom-workers/discussions/categories/general
+    about: 和他人交流项目有关的内容。 Discuss project related topics on the discussions page.

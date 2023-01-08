@@ -4,9 +4,11 @@
 <p align="center">
   <a href="https://github.com/PencilNavigator/Freenom-Workers/blob/main/README_EN.md">English README</a>
   •
-  <a href="https://github.com/PencilNavigator/Freenom-Workers-Issues/issues">Issues</a>
+  <a href="https://github.com/PencilNavigator/Freenom-Workers/issues">Issues</a>
   •
-  <a href="https://github.com/PencilNavigator/Freenom-Workers-Issues/discussions" target="_blank">General Discussions</a>
+  <a href="https://github.com/PencilNavigator/Freenom-Workers/Wiki">Wiki</a>
+  •
+  <a href="https://github.com/PencilNavigator/Freenom-Workers/discussions" target="_blank">Discussions</a>
 </p>
 <p align="center">
  喜欢这个项目？给颗Star吧！
@@ -64,11 +66,11 @@ _请注意，通过预览访问不会触发续期任务，仅用于测试是否�
 
 ## 已知问题
 
-请访问该[Wiki](https://github.com/PencilNavigator/freenom-workers-issues/wiki/Known-Issues)。
+请访问该[Wiki](https://github.com/PencilNavigator/freenom-workers/wiki/Known-Issues)页面。
 
 ## 待实现的功能
-执行成功后，通过邮件送信/TelegramBot/DiscordBot发送执行结果。
 
+请访问该[Wiki](https://github.com/PencilNavigator/freenom-workers/wiki/Planned-Enhancement)页面。
 
 ## 类似项目
 https://github.com/luolongfei/freenom (PHP)
