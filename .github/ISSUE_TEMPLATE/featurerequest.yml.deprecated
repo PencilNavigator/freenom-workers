@@ -1,0 +1,57 @@
+name: Feature request 功能请求
+description: create a feature request to help us inprove.
+labels: enhancement 功能请求
+title: Feature request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A clear and concise description of your feature request.
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: |
+        To rule out invalid issues, confirm and check each one of the checkboxes.提交Issues之前请详细阅读并确认。
+      options:
+        - label: |
+            This is not a support issue or a question. For any support, questions or help, visit our [Discord](https://discord.gg/e8McQJStgD).
+            这不是一个支持请求. 如有任何支持问题或请求，请访问我们的 [Discord](https://discord.gg/e8McQJStgD).
+          required: true
+        - label: |
+            I performed a [cursory search of the issue tracker](https://github.com/PencilNavigator/Freenom-Workers/issues?q=is%3Aissue) to avoid opening a duplicate issue. 
+            我 [完整仔细的搜索了所有的Issues](https://github.com/PencilNavigator/Freenom-Workers/issues?q=is%3Aissue) 并确保这不是一个重复Issue。
+          required: true
+        - label: |
+            I understand that not filling out this template will lead to the issue being closed and locked. 
+            我清除不按照模板正确填写信息将导致该Issues关闭并锁定。
+          required: true
+
+  - type: textarea
+    attributes:
+      label: Why requestiing for this feature? 请求该功能的原因？
+      description: A short description of the bug.
+      placeholder: |
+        A clear and concise description of what the problem is. E.g. When I open [blank] it hangs/freezes
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Describe the solution you would like. 描述你想要的解决方法。
+      placeholder: |
+        A clear and concise description of what you want to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Describe alternatives you have considered. 你考虑过的临时解决方案。
+      description: If you have found a temporary fix, list it here.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional context. 补充
+      description: Add any other context or screenshots about the feature request here.
+    validations:
