@@ -2,7 +2,7 @@
 <h4 align="center">Renew your Freenom domain (.cf .ga .gq .ml .tk) automaticly with Cloudflare Workers.</h4>
 
 <p align="center">
-  <a href="https://github.com/PencilNavigator/Freenom-Workers/blob/main/README.md">中文README</a>
+  <a href="README_zh.md">中文README</a>
   •
   <a href="https://github.com/PencilNavigator/Freenom-Workers/issues">Issues</a>
   •
