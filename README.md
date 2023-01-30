@@ -1,83 +1,71 @@
 
-<h4 align="center">Renew your Freenom domain (.cf .ga .gq .ml .tk) automaticly with Cloudflare Workers.</h4>
+<h4 align="center">使用 Cloudflare Workers 自动续订您的 Freenom 域 （.cf .ga .gq .ml .tk）。</h4>
 
 <p align="center">
-  <a href="https://github.com/PencilNavigator/Freenom-Workers/blob/main/README.md">中文README</a>
+  <a href="https://github.com/PencilNavigator/Freenom-Workers/blob/main/README.md">中文自述文件</a>
   •
-  <a href="https://github.com/PencilNavigator/Freenom-Workers/issues">Issues</a>
+  <a href="https://github.com/PencilNavigator/Freenom-Workers/issues">问题</a>
   •
-  <a href="https://github.com/PencilNavigator/Freenom-Workers/Wiki">Wiki</a>
+  <a href="https://github.com/PencilNavigator/Freenom-Workers/Wiki">维基</a>
   •
-  <a href="https://github.com/PencilNavigator/Freenom-Workers/discussions" target="_blank">Discussions</a>
+  <a href="https://github.com/PencilNavigator/Freenom-Workers/discussions" target="_blank">讨论</a>
 </p>
 <p align="center">
- Like this project？ Star it!
+ 喜欢这个项目吗？ 加星标！
 </p>
 
-## Set-up
+## 设置
 
-Open your [Cloudflare Dashboard](https://dash.cloudflare.com)
+打开您的 Cloudflare 仪表板
 
+在主页左侧边栏中选择“工作人员”。
 
-Select "Workers" in the left sidebar on the homepage.
+在“工作线程”选项卡上，选择“创建服务”，选择您的服务名称，然后选择一个启动器（HTTP 处理程序）。
 
+在刚刚创建的工作线程上，选择“快速编辑”。
 
-On the Workers tab，choose "Create a Service"，choose your service name，and select a starter (HTTP Handler)。
+在快速编辑界面中，将代码复制并粘贴到worker_EN.js中，然后单击保存。
 
+返回到刚刚创建的工作线程页面，选择“设置”，然后选择“变量”。
 
-On the Workers you just created, select "Quick edit".
+在变量页上，添加以下变量名称和值。
 
+SECRET_USERNAME“与您的Freenom用户名。
+SECRET_PASSWORD“与您的Freenom密码。
+（可选）为两个变量选择加密选项，以减少您的Freenom用户名和密码泄漏的可能性。
 
-In the Quick edit interface, copy and paste the code in worker_EN.js and click Save.
+返回到已创建的“辅助角色”页，然后选择“触发器”。
 
+在“触发器”屏幕上，单击“添加 Cron 触发器”。在“添加 Cron 触发器”页上，设置触发器并保存“设置”。建议的执行时间为每天一次。
 
-Go back to the Workers page you just created and select "Settings" and then "Variables".
-
-
-On the variables page, add the following variable name and value.
-
-- SECRET_USERNAME" with your Freenom username.
-- SECRET_PASSWORD" with your Freenom password.
-
-
-(Optional) Select the Encryption option for both variables to reduce the probability of leakage for your Freenom username and password.
+在同一界面上，禁用路由中的默认路由（例如 servicename.subdomain.worker.dev）。
 
 
-Return to the created Workers page and select Triggers.
+## 测试
 
+（通过快速编辑访问）在 Quice 编辑界面中访问已部署的工作线程服务。您应该会看到帐户中所有域名的剩余日期。请注意，通过预览访问不会触发续订。 它只能用于测试目的。
 
-On the Trigger screen, click "Add Cron Trigger". On the Add Cron Trigger page, set up the trigger and save the Settings. The recommended execution time is once a day.
+（触发计划事件）输入“快速编辑”，选择“设置时间”，然后选择“触发定时事件”。您应该会看到控制台输出域的剩余日期。（如果检测到可续订域，控制台将输出续订结果。
 
-
-On the same interface, Disable the default route (e.g. servicename.subdomain.worker.dev) in Routes.
-
-
-## Test
-
-(Access through Quick edit) Access your deployed Workers service in the Quice edit interface. You should see the remaining dates of all domain names in your account.
-_Please note that access through preview does not trigger renewal. it should only be used for testing purposes._
-
-(Trigger scheduled event) Enter "Quick Edit", select "Set Time", and then select "Trigger scheduled event". You should see the console outputing the remaining date of the domain. (If a renewable domain is detected, the console will output renewal results.)
-
-## Showcase
+## 展示
 ![Image](https://user-images.githubusercontent.com/85282140/207813815-99af2574-910d-40d1-908c-5f18de1a5648.png)
 
-（Successfully renewed on 2022/12/15）
+（2022/12/15 成功更新）
 
-## Known Issues
+## 已知问题
 
-Please check out this [Wiki](https://github.com/PencilNavigator/freenom-workers/wiki/Known-Issues) page.
+请查看此 [维基](https://github.com/PencilNavigator/freenom-workers/wiki/Known-Issues) 页面。
 
-## Planned enhancement
+## 计划的增强
 
-Please check out this [Wiki](https://github.com/PencilNavigator/freenom-workers/wiki/Planned-Enhancement) page.
+请查看此 [维基](https://github.com/PencilNavigator/freenom-workers/wiki/Planned-Enhancement) 页面。
 
-## Simliar Projects
+## 项目的其他开发语言
 https://github.com/luolongfei/freenom (PHP)
 
 https://github.com/Oreomeow/freenom-py (Python)
 
-## LICENSE
-Currently no LICENSE.
+## 许可证
+目前没有许可证。
 
 <img title="mona-loading" alt="mona-loading" src="https://github.githubassets.com/images/mona-loading-dark.gif" width="100">
