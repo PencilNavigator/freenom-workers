@@ -16,41 +16,23 @@
 
 ## 部署
 
-打开你的 [Cloudflare管理面板](https://dash.cloudflare.com)
+1. 打开你的 [Cloudflare管理面板](https://dash.cloudflare.com)
+2. 在账号主页左侧侧边栏选择Workers
+3. 在Workers页面，选择创建服务，设置好服务名称，选择HTTP处理程序。
+4. 在刚刚创建的Workers界面，选择“快速编辑”。
+5. 在编辑界面，粘贴worker.js内代码，点击保存。
+6. 返回刚刚创建的Workers页面，选择“设置”，再选择“变量”。
+7. 在变量页面，添加以下变量和变量值：
+	- SECRET_USERNAME变量，填入Freenom用户名
+	- SECRET_PASSWORD变量，填入Freenom密码
 
+	（可选）勾选两个变量的“加密”选项（可极大程度降低Freenom用户名和密码泄露的概率）。
 
-在账号主页左侧侧边栏选择Workers
-
-
-在Workers页面，选择创建服务，设置好服务名称，选择HTTP处理程序。
-
-
-在刚刚创建的Workers界面，选择“快速编辑”。
-
-
-在编辑界面，粘贴worker.js内代码，点击保存。
-
-
-返回刚刚创建的Workers页面，选择“设置”，再选择“变量”。
-
-
-在变量页面，添加以下变量和变量值：
-
-- SECRET_USERNAME变量，填入Freenom用户名
-
-- SECRET_PASSWORD变量，填入Freenom密码
-
-
-（可选）勾选两个变量的“加密”选项（可极大程度降低Freenom用户名和密码泄露的概率）。
-
-
-返回创建的Workers页面，选择“触发器”。
-
-
-在触发器界面，选择添加Cron触发器。在“添加Cron触发器”界面，设置触发器，保存。推荐执行时间为一天一次。
-
-
-在同一界面的路由选项中禁用默认路由（通常为 服务名.子域名.workers.dev）。
+8. 返回创建的Workers页面，选择“触发器”。
+9. 在触发器界面，选择添加Cron触发器。在“添加Cron触发器”界面，设置触发器，保存。推荐执行时间为一天一次。
+10. 在同一界面的路由选项中禁用默认路由（通常为 服务名.子域名.workers.dev）。
+11. （可选）启用[pushplus](https://www.pushplus.plus/)推送，续期成功或者失败会自动推送消息到微信，启用方法：
+	- 添加PUSHPLUS_TOKEN变量，填入pushplus的token，并勾选加密
 
 ## 测试
 

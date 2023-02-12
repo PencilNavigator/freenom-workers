@@ -67,26 +67,38 @@ async function getDomainInfo() {
    return res
 }
 
-async function renewDomains(domainInfo) {
-   const token = domainInfo.token
-   for (const domain in domainInfo.domains) {
-      const days = domainInfo.domains[domain].days
-      if (parseInt(days) < 14) {
-         const renewalId = domainInfo.domains[domain].renewalId
-         headers['referer'] = `${RENEW_REFERER_URL}&domain=${renewalId}`
-         const resp = await fetch(RENEW_DOMAIN_URL, {
-            method: 'POST',
-            body: `token=${token}&renewalid=${renewalId}&renewalperiod[${renewalId}]=12M&paymentmethod=credit`,
-            headers: headers,
-         })
-         const html = await resp.text()
-         console.log(
-            domain,
-            /Order Confirmation/i.test(html) ? '续期成功' : '续期失败'
-         )
-      } else {
+async function renewDomains(info) {
+   const token = info.token
+   const results = [];
+   const domains = info.domains;
+   for (const domain in domains) {
+      const domainInfo = domains[domain];
+      const days = parseInt(domainInfo.days)
+      if (days >= 14) {
          console.log(`域名 ${domain} 还有 ${days} 天续期`)
+         continue;
       }
+      const renewalId = domainInfo.renewalId
+      headers['referer'] = `${RENEW_REFERER_URL}&domain=${renewalId}`
+      const resp = await fetch(RENEW_DOMAIN_URL, {
+         method: 'POST',
+         body: `token=${token}&renewalid=${renewalId}&renewalperiod[${renewalId}]=12M&paymentmethod=credit`,
+         headers: headers,
+      })
+      const html = await resp.text()
+      const success = /Order Confirmation/i.test(html)
+      console.log(
+         domain,
+         success ? '续期成功' : '续期失败'
+      )
+      results.push({
+         success,
+         domain,
+         days
+      })
+   }
+   if (results.length) {
+      return pushMessage(results);
    }
 }
 
@@ -134,3 +146,19 @@ async function handleRequest() {
 addEventListener('fetch', (event) => {
    event.respondWith(handleRequest())
 })
+
+async function pushMessage(results) {
+   if (!PUSHPLUS_TOKEN) {
+      return
+   }
+   const pushUrl = 'https://www.pushplus.plus/send'
+   const postData = new FormData()
+   postData.set('token', PUSHPLUS_TOKEN)
+   postData.set('title', '免费域名更新结果')
+   const content = results.map(result => `域名 ${result.domain} 更新${result.success ? '成功' : '失败'}，剩余有效期${result.days}天`).join('</br>')
+   postData.set('content', content)
+   const resp = await fetch(pushUrl, {
+      method: 'POST',
+      body: postData,
+   })
+}
