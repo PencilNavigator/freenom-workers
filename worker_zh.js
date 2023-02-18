@@ -82,10 +82,10 @@ async function renewDomains(domainInfo) {
          const html = await resp.text()
          console.log(
             domain,
-            /Order Confirmation/i.test(html) ? 'Renewal Success' : 'Renewal Failed'
+            /Order Confirmation/i.test(html) ? '续期成功' : '续期失败'
          )
       } else {
-         console.log(`Domain ${domain} still has ${days} days until renewal.`)
+         console.log(`域名 ${domain} 还有 ${days} 天续期`)
       }
    }
 }
@@ -114,14 +114,14 @@ async function handleRequest() {
    const domainHtml = []
    for (const domain in domains) {
       const days = domains[domain].days
-      domainHtml.push(`<p>Domain ${domain} still has ${days} days until renewal.</p>`)
+      domainHtml.push(`<p>域名 ${domain} 还有 ${days} 天到期</p>`)
    }
    const html = `
    <!DOCTYPE html>
    <html>
-   <head><title>Freenom-Workers Renew</title></head>
+   <head><title>Freenom Renew Workers</title></head>
    <body>
-   Project Repository：https://github.com/PencilNavigator/Freenom-Workers<br/>
+   本项目仓库地址：https://github.com/PencilNavigator/Freenom-Workers<br/>
    ${domainHtml.join('')}
    </body>
    </html>
