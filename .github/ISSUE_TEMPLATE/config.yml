@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: 功能请求 Feature Request
+  - name: 想法/功能请求 Idea/Feature Request
     url: https://github.com/PencilNavigator/freenom-workers/discussions/new?category=feature-request
-    about: 请前往Discussions提交Feature Request。 Feature Request is handled on Discussions.
+    about: 请前往Discussions提交你的想法或功能请求。 Idea，Feature Request is handled on Discussions.
   - name: 帮助支持 Support
     url: https://github.com/PencilNavigator/freenom-workers/discussions/new?category=support
     about: 提问，求助，以及其他类型的帮助支持，请前往Discussions。 Answers to questions and support is provided on the discussions page.
