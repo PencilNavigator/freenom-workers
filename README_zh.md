@@ -28,7 +28,7 @@
 在刚刚创建的Workers界面，选择“快速编辑”。
 
 
-在编辑界面，粘贴[worker_zh.js](https://github.com/PencilNavigator/freenom-workers/blob/main/worker_zh.js)内代码，点击保存。（[英文版](https://github.com/PencilNavigator/freenom-workers/blob/main/worker.js)）
+在编辑界面，粘贴[worker_zh.js](https://cdn.jsdelivr.net/gh/PencilNavigator/freenom-workers@main/worker_zh.js)内代码，点击保存。（[英文版](https://cdn.jsdelivr.net/gh/PencilNavigator/freenom-workers@main/worker.js)）
 
 
 返回刚刚创建的Workers页面，选择“设置”，再选择“变量”。
