@@ -28,7 +28,7 @@ On the Workers tab，choose "Create a Service"，choose your service name，and 
 On the Workers you just created, select "Quick edit".
 
 
-In the Quick edit interface, copy and paste the code in [worker.js](https://github.com/PencilNavigator/freenom-workers/blob/main/worker.js) and click Save.
+In the Quick edit interface, copy and paste the code in [worker.js](https://cdn.jsdelivr.net/gh/PencilNavigator/freenom-workers@main/worker.js) and click Save.
 
 
 Go back to the Workers page you just created and select "Settings" and then "Variables".
