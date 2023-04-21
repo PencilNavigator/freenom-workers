@@ -1,6 +1,6 @@
-name: Feature request 功能请求
+name: [FEATURE REQUEST]
 description: create a feature request to help us inprove.
-labels: enhancement 功能请求
+labels: enhancement
 title: Feature request
 body:
   - type: markdown
