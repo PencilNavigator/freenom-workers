@@ -121,7 +121,7 @@ async function handleRequest() {
    <html>
    <head><title>Freenom-Workers Renew</title></head>
    <body>
-   Project Repository：https://github.com/PencilNavigator/Freenom-Workers<br/>
+   Project Repository：https://github.com/PencilNavigator/freenom-workers<br/>
    ${domainHtml.join('')}
    </body>
    </html>
