@@ -121,7 +121,7 @@ async function handleRequest() {
    <html>
    <head><title>Freenom Renew Workers</title></head>
    <body>
-   本项目仓库地址：https://github.com/PencilNavigator/Freenom-Workers<br/>
+   本项目仓库地址：https://github.com/PencilNavigator/freenom-forkers<br/>
    ${domainHtml.join('')}
    </body>
    </html>
