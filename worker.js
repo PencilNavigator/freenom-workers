@@ -119,7 +119,7 @@ async function handleRequest() {
    const html = `
    <!DOCTYPE html>
    <html>
-   <head><title>Freenom-Workers Renew</title></head>
+   <head><title>Freenom Renew Workers</title></head>
    <body>
    Project Repository：https://github.com/PencilNavigator/freenom-workers<br/>
    ${domainHtml.join('')}
