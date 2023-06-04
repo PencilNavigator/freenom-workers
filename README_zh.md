@@ -1,3 +1,6 @@
+## 重要通知
+Freenom 最近更新加上了亚马逊 CAPTCHA 用于各个页面的验证，目前基本上所有脚本均无法自动续期。
+各位可以先暂时手动续期。
 
 <h4 align="center">通过Cloudflare Workers自动续期Freenom域名(.cf .ga .gq .ml .tk)。</h4>
 
