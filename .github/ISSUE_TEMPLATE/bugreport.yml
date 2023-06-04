@@ -1,7 +1,7 @@
 name: Bug Report 故障报告
 description: create a bug report to help us inprove.
 labels: bug, waiting for review
-title: "[BUG REPORT] - "
+title: "[BUG REPORT] "
 body:
   - type: markdown
     attributes:
