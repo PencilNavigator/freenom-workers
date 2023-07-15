@@ -6,40 +6,18 @@ body:
   - type: markdown
     attributes:
       value: |
-        A clear and concise description of what the bug is.
-  - type: checkboxes
-    attributes:
-      label: Prerequisites
-      description: |
-        To rule out invalid issues, confirm and check each one of the checkboxes.提交Issues之前请详细阅读并确认。
-      options:
-        - label: |
-            This is not a support issue or a question. For any support, questions or help, visit our [Discord](https://discord.gg/e8McQJStgD).
-            这不是一个支持请求. 如有任何支持问题或请求，请访问我们的 [Discussions](https://discord.gg/e8McQJStgD).
-          required: true
-        - label: |
-            I performed a [cursory search of the issue tracker](https://github.com/PencilNavigator/Freenom-Workers/issues?q=is%3Aissue) to avoid opening a duplicate issue. 
-            我 [完整仔细的搜索了所有的Issues](https://github.com/PencilNavigator/Freenom-Workers/issues?q=is%3Aissue) 并确保这不是一个重复Issue。
-          required: true
-        - label: |
-            I checked the [documentation](https://github.com/PencilNavigator/Freenom-Workers/wiki) to understand that the issue I am reporting is not normal behavior. 
-            我仔细查看了[文档](https://github.com/PencilNavigator/Freenom-Workers/wiki)并确认这不是一个正常现象。
-          required: true
-        - label: |
-            I understand that not filling out this template correctly will lead to the issue being closed and locked. 
-            我理解不正确完整填写模板将导致该Issues关闭并锁定。
-          required: true
+        A clear and brief description of what the bug is.
 
   - type: textarea
     attributes:
-      label: Description 问题描述
+      label: Description
       description: A short description of the bug.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Steps to reproduce 重现步骤
+      label: Steps to reproduce
       placeholder: |
         1. [First Step]
         2. [Second Step]
@@ -49,20 +27,39 @@ body:
 
   - type: textarea
     attributes:
-      label: Expected behavior 预期结果
+      label: Expected behavior
       description: What you expected to happen.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Actual behavior 实际结果
-      description: What happened.
+      label: Actual behavior
+      description: What actually happened.
     validations:
       required: true
+      
+  - type: checkboxes
+    attributes:
+      label: Requisites
+      description: |
+        To rule out invalid issues, confirm and check each one of the checkboxes.
+      options:
+        - label: |
+            This is not a support issue or a question. For any support, questions or help, visit our [Discussions](https://github.com/PencilNavigator/freenom-workers/discussions).
+          required: true
+        - label: |
+            I performed a [cursory search of the issue tracker](https://github.com/PencilNavigator/Freenom-Workers/issues?q=is%3Aissue) to avoid opening a duplicate issue. 
+          required: true
+        - label: |
+            I checked the [documentation](https://freenom-workers.999857.xyz) to understand that the issue I am reporting is not normal behavior. 
+          required: true
+        - label: |
+            I understand that not filling out this template correctly will lead to the issue being closed and locked. 
+          required: true
 
   - type: textarea
     attributes:
-      label: Additional content 补充
+      label: Additional content
       description: anything you want to add.
     validations:
