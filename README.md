@@ -1,6 +1,9 @@
-## IMPORTANT NOTICE
+## IMPORTANT NOTICE 重要通知
 Freenom recently updated their site and added a AWS Captcha, Causing ALL automatic renew sortware to not work.
 For now, please renew your domain manually. Get updates [HERE](https://github.com/PencilNavigator/freenom-workers/issues/9).
+
+Freenom 最近更新加上了亚马逊 CAPTCHA 用于各个页面的验证，目前基本上所有脚本均无法自动续期。
+各位可以先暂时手动续期。获取该问题的更新信息，请点 [这里](https://github.com/PencilNavigator/freenom-workers/issues/9)。
 
 <h4 align="center">Renew your Freenom domain (.cf .ga .gq .ml .tk) automaticly with Cloudflare Workers.</h4>
 
