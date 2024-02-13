@@ -1,23 +1,14 @@
-## IMPORTANT NOTICE 重要通知
-Freenom recently updated their site and added a AWS Captcha, Causing ALL automatic renew sortware to not work.
-For now, please renew your domain manually. Get updates [HERE](https://github.com/PencilNavigator/freenom-workers/issues/9).
+## ⚠ ANNOUNCEMENT
 
-Freenom 最近更新加上了亚马逊 CAPTCHA 用于各个页面的验证，目前基本上所有脚本均无法自动续期。
-各位可以先暂时手动续期。获取该问题的更新信息，请点 [这里](https://github.com/PencilNavigator/freenom-workers/issues/9)。
+#### On Feb 7th 2024, freenom has revoked all it's free ccTLD's management perms and started deleting NS & DNS records on all domains, This really is the end. 😢 Project is archived.
+
+#### 2024 年 2 月 7 日， Freenom 回收了所有免费域名的管理权限并开始批量删除所有域名的NS和DNS记录，Freenom免费域名不再可用。本项目封存。
+---
 
 <h4 align="center">Renew your Freenom domain (.cf .ga .gq .ml .tk) automaticly with Cloudflare Workers.</h4>
 
 <p align="center">
-  <a href="https://github.com/PencilNavigator/freenom-workers/blob/main/README_zh.md">中文README</a>
-  •
-  <a href="https://github.com/PencilNavigator/Freenom-Workers/issues">Issues</a>
-  •
-  <a href="https://github.com/PencilNavigator/Freenom-Workers/Wiki">Wiki</a>
-  •
-  <a href="https://github.com/PencilNavigator/Freenom-Workers/discussions" target="_blank">Discussions</a>
-</p>
-<p align="center">
- Like this project？ Star it!
+
 </p>
 
 ## Set-up
